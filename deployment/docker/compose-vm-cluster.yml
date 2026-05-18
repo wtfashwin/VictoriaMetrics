@@ -47,6 +47,7 @@ services:
       - strgdata-1:/storage
     command:
       - "--storageDataPath=/storage"
+      - "--retentionPeriod=1M"
     restart: always
   vmstorage-2:
     image: victoriametrics/vmstorage:v1.143.0-cluster
@@ -54,6 +55,7 @@ services:
       - strgdata-2:/storage
     command:
       - "--storageDataPath=/storage"
+      - "--retentionPeriod=1M"
     restart: always
 
   # vminsert is ingestion frontend. It receives metrics pushed by vmagent,

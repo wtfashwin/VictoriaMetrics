@@ -208,6 +208,7 @@ and then install it as a service according to the following guide:
 
       <env name="loggerFormat" value="json" />
       <env name="loggerOutput" value="stderr" />
+      <env name="retentionPeriod" value="90d" />
       <env name="promscrape_config" value="C:\Program Files\victoria-metrics\promscrape.yml" />
 
     </service>

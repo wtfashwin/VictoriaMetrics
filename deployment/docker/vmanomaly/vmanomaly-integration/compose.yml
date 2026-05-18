@@ -24,6 +24,7 @@ services:
       - "--httpListenAddr=:8428"
       - "--vmalert.proxyURL=http://vmalert:8880"
       - "-search.disableCache=1" # for guide only, do not use in production
+      - "--retentionPeriod=1M"
     restart: always
 
   grafana:
