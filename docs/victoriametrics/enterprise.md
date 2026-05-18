@@ -190,6 +190,7 @@ services:
     command:
       - "-storageDataPath=/storage"
       - "-licenseFile=/vm-license"
+      - "-retentionPeriod=90d"
 volumes:
   vmdata: {}
 ```
